@@ -1,0 +1,275 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    position: relative;
+}
+
+@media screen and (min-width:769px){
+    .header{
+        padding: 1rem;
+        margin-left:472px;
+    
+    }
+    .responsive{
+        display: none;
+    }
+    .logo1{
+        width:180px;
+        margin-top: -90px;
+        cursor: pointer;
+    }
+
+    .sidebar {
+        margin-top: 19px;
+        color: white;
+        transition: width 0.3s;
+        position: relative;
+        position: fixed;
+    }
+    #searchIcon{
+        color: white;
+    }
+    
+    #search{
+        background-color: black;
+        border:none;
+        color:white;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    
+    #search:focus{
+        outline: none;
+    }
+    .board {
+        color:white;
+        padding: 7px;
+        margin: 40px 19%;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        width: 480px;
+    }
+    .rows {
+        display: flex;
+        gap: 5px;
+    }
+    .btnr {
+        padding: 0.4em 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: rgb(51,51,51,0.5);
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .btnr::selection {
+        user-select: none;
+    }
+    
+    .btnr:hover {
+        background-color: rgb(233, 228, 228);
+    }
+    
+    .btnr:active{
+        background-color: rgb(177, 176, 176);
+    }
+    .sidebar-item {
+        padding: 20px 60px;
+        cursor: pointer;
+        display: flex;
+        font-size:25px;
+        align-items: center;
+    }
+    
+    .sidebar-item span {
+        display: none;
+        margin-left: 10px;
+    }
+    .sidebar-item button{
+        color:white;
+        border:none;
+        background-color: transparent;
+        font-size: 25px;
+        cursor: pointer;
+        display: flex;
+    }
+    
+    .sidebar-item button:hover{
+       color: red;
+    }
+    .sidebar-item span:hover{
+        color: red;
+    }
+    .sidebar-item i:hover{
+        color: red;
+    }
+      
+.intro{
+    position: relative;
+    margin-top:60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    max-height: 300px;
+    width:100vw; 
+   
+}
+
+.intro-img #poster{
+    /* position: sticky; */
+    margin-left: 850px;
+    width:550px;
+    height:350px;
+    object-fit: fill;
+}
+ .intro-content{
+   margin-left: 150px;
+   position: absolute;
+   top:0px;
+   left:0px;
+   font-size:1.2rem;
+ }
+#overview{
+    overflow-wrap: break-word;
+    width:600px;
+}
+.crew{
+    overflow-wrap: break-word;
+    width:750px;
+}
+
+    .container{
+        margin-left:210px;
+        position: absolute;
+        top: 95px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding:1.2rem;
+        overflow-y: scroll;
+        margin-left: 250px;
+        margin-top:0px;
+        max-height: calc(100vh - 169px);
+        color: white;
+    }
+    
+    .image_item{
+        object-fit: cover;
+        width:550px;
+        height:350px;
+        transition: transform 500ms;
+    }
+    .image_item:hover{
+        transform: scale(1.09);
+    }
+    .image_list::-webkit-scrollbar{
+        display: none;
+    }
+    .container::-webkit-scrollbar{
+        display: none;
+    }
+
+}
+@media screen and (min-width: 350px) and (max-width: 768px){
+    .sidebar {
+       display: none;
+    }
+    .logo{
+        width:130px;
+        margin-left:1rem;
+        cursor: pointer;
+    }
+    .logo1{
+        display: none;
+    }
+    .header{
+        display: none;
+    }
+    .responsive{
+        margin-right:10px;
+        display: flex;
+        align-items: center;
+        gap:90px;
+    }
+    
+    .item{
+        border: none;
+        font-size: 1.8rem;
+        color: white;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        
+    }
+    #searchIcon1{
+        color:white;
+    }
+    #search1{
+        background-color: black;
+        border:none;
+        color:white;
+        padding: 8px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    
+    #search1:focus{
+        outline: none;
+    }
+    .board {
+        display: none;
+    }
+    .rows {
+        display: flex;
+        gap: 5px;
+    }
+    .btnr {
+        padding: 0.4em 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: rgb(51,51,51,0.5);
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .btnr::selection {
+        user-select: none;
+    }
+    
+    .btnr:hover {
+        background-color: rgb(233, 228, 228);
+    }
+    
+    .btnr:active{
+        background-color: rgb(177, 176, 176);
+    }
+   
+    .container{
+        margin-top:10px;
+        margin-left:25px;
+        font-size: 0.8rem;
+        color:white;
+    }
+
+    .image_item{
+        object-fit: cover;
+        width: 475px;
+        height: 265px;
+        transition: transform 500ms;
+    }
+    .image_item:hover{
+        transform: scale(1.09);
+    }
+    .image_list::-webkit-scrollbar{
+        display: none;
+    }
+    .container::-webkit-scrollbar{
+        display: none;
+    }
+
+}

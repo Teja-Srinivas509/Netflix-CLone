@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India - Watch TV Shows on Netflix</title>
+    <link rel="icon"  href="./assets/favicon-32x32.png" type="image/png"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="responsive">
+        <img src="./assets/logo - Copy.png" alt="logo" class="logo">
+        <div class="item" data-name="Search"><button onclick="searchPage()" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button></div>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-item" data-name="Home"><i class="fa-solid fa-house"></i><span>Home</span></div>
+        <div class="sidebar-item" data-name="Trend"><button><i class="fa-solid fa-arrow-trend-up"></i></button><span>Trend</span></div>
+        <div class="sidebar-item" data-name="Search"><button onclick="searchPage()" class="btn"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></button></div>
+        <div class="sidebar-item" data-name="TV"><i class="fa-solid fa-tv"></i><span>TV</span></div>
+        <div class="sidebar-item" data-name="Categories"><i class="fa-solid fa-clapperboard"></i><span>Categories</span></div>
+        <div class="sidebar-item" data-name="Plus"><i class="fa-solid fa-plus"></i><span>Plus</span></div>
+    </div> 
+   
+
+    <div class="intro">
+        <div class="intro-content">
+          <h1 id="title">TITLE</h1>
+          <div class="intro-bar">
+                <p id="release_date">2023</p>
+        
+                <p id="vote_average">8</p>
+                <p><i class="fa-solid fa-audio-description"></i></p>
+                <p><i class="fa-solid fa-message"></i></p>
+          </div>
+          <p id="overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita veritatis nisi quos, ipsum ratione, dolorem saepe vel esse modi quod rerum nihil et eligendi obcaecati tenetur autem veniam dolor sunt!Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita veritatis nisi quos, ipsum ratione, dolorem saepe vel esse modi quod rerum nihil et eligendi obcaecati tenetur autem veniam dolor sunt!</p>
+          <div class="crew">
+              <p id="original_language">ENG</p>
+              <p id="cast"></p>
+          </div>
+        </div>
+        <div class="intro-img">
+            <img src="" alt="" srcset="" id="poster">   
+
+        </div>
+    </div>
+      
+    <div class="container">
+        <div class="slider">
+            <h2 class="slider_title"></h2>
+            <div class="image_list">
+             
+            </div>
+       
+        </div>
+    </div> 
+</body>
+<script src="index.js"></script>
+</html>

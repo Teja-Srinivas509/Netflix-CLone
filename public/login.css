@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)), url(./assets/bgimg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+@media screen and (min-width: 769px) {
+
+    .container{
+        width:100vw;
+        height:100vh;
+        
+    }
+    nav {
+        width: 100%;
+    }
+    .logo{
+        width:180px;
+        margin:4px 8rem;
+        cursor: pointer;
+    }
+    .container-signin{
+        margin:0px auto;
+        background-color: rgba(0, 0, 0, .6);
+        border-radius: 5px;
+        width:450px;
+        padding:30px 70px 143px 70px;
+        color:white;
+    }
+    .container-signin h1{
+        color:#fff;
+        padding-bottom:15px;
+    }
+    .input-text{
+        margin-bottom: 0px;
+    }
+    .input-text input{
+        margin-bottom: 20px;
+        width: 100%;
+        height: 45px;
+        background-color: #333;
+        color: white;
+        border-radius:5px;
+        border: none;
+        outline: transparent;
+        text-indent: 18px;
+    }
+    .signin-btn{
+        margin-top: 20px;
+        width: 100%;
+        padding: 13px;
+        border-radius: 5px;
+        background: rgb(229, 9, 20);
+        color:white;
+        border:none;
+        font-weight: bold;
+        font-size: 1.05rem;
+        cursor: pointer;
+        transition: .3s ease-in
+    }
+    .or{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        color:white;
+        font-weight: bold;
+        font-size: 1.05rem;
+    }
+    .code{
+        border-color: rgba(0, 0, 0, 0);
+        background: rgba(128, 128, 128, 0.4);
+        color: rgb(255, 255, 255);
+        margin-top: 20px;
+        width: 100%;
+        padding: 13px;
+        border-radius: 5px;
+        border:none;
+        font-weight: bold;
+        font-size: 1.05rem;
+        margin-bottom:9px;
+        transition: .3s ease-in;
+    }
+    .code:hover{
+        background: rgba(128, 128, 128, 0.3);
+    }
+    .sigin-btn:hover{
+        background: rgb(229, 9, 0,0.6);
+    }
+    .forgot{
+        text-decoration: none;
+        color: white;
+        font-size:1.rem;
+        margin:0 auto;
+    }
+    .final{
+        font-size: 0.7rem;
+        margin:10px 0px;
+        color: rgba(255,255,255,0.5);
+    }
+    
+    
+    .resubmit{
+        margin-left:213px;
+        margin-top: 45px;
+    }
+    .resubmit p{
+        color: #ddd;
+        font-size: 20px;
+    }
+    .resubmit .int{
+        width:70%;
+    }
+    .footer{
+        margin-top:100px;
+        padding:50px 220px 10px;
+        background-color: rgba(0, 0, 0, .6);
+        color:rgba(255, 255, 255, 0.7);
+    
+    }
+    .footer h1 {
+        font-size: 18px;
+        margin-bottom: 28px;
+    }
+    
+    .footer .row{
+        display: flex;
+        padding:5px 4px;
+        margin-right:50px;
+    }
+    .footer .col {
+        margin-bottom: 5px;
+        margin-right:120px;
+    }
+    .footer .col a{
+        display: block;
+        font-size:14px;
+        color:rgba(255, 255, 255, 0.7);
+        margin-bottom:10px;
+    }
+    .footer p {
+        color:rgba(255, 255, 255, 0.7);
+        padding:50px 5px;
+    }
+    .btn-lan {
+        margin-top: 10px;
+        border-radius: 6px;
+        border: 1px solid #777;
+        padding: 6px 20px;
+        background-color: rgb(16, 16, 16);
+        color:rgba(255, 255, 255, 0.7);
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 768px) {
+
+    .logo{
+        width:180px;
+        margin:4px;
+        cursor: pointer;
+       }
+       .container-signin{
+        margin:0px auto;
+        background-color: rgba(0, 0, 0, .6);
+        border-radius: 5px;
+        width:450px;
+        padding:30px 70px 143px 20px;
+        color:white;
+       }
+       .container-signin h1{
+        color:#fff;
+        padding-bottom:25px;
+
+    }
+    .input-text{
+        margin-bottom: 0px;
+    }
+    .input-text input{
+        margin-bottom: 20px;
+        width: 90%;
+        height: 60px;
+        background-color: #333;
+        color: white;
+        border-radius:5px;
+        border: none;
+        outline: transparent;
+        text-indent: 18px;
+        font-size: 1.2rem;
+    }
+    .signin-btn{
+        margin-top: 20px;
+        width: 90%;
+        padding: 13px;
+        border-radius: 5px;
+        background: rgb(229, 9, 20);
+        color:white;
+        border:none;
+        font-weight: bold;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: .3s ease-in
+    }
+    .or{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        color:white;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .code{
+        border-color: rgba(0, 0, 0, 0);
+        background: rgba(128, 128, 128, 0.4);
+        color: rgb(255, 255, 255);
+        margin-top: 20px;
+        width: 90%;
+        padding: 13px;
+        border-radius: 5px;
+        border:none;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom:9px;
+        transition: .3s ease-in;
+    }
+    .code:hover{
+        background: rgba(128, 128, 128, 0.3);
+    }
+    .sigin-btn:hover{
+        background: rgb(229, 9, 0,0.6);
+    }
+    .forgot{
+        text-decoration: none;
+        color: white;
+        font-size:1rem;
+        margin:5px auto;
+    }
+    .final{
+        font-size: 1.1rem;
+        margin:10px 0px;
+        color: rgba(255,255,255,0.5);
+    }
+    
+    
+    .resubmit{
+        margin-left:213px;
+        margin-top: 45px;
+    }
+    .resubmit p{
+        color: #ddd;
+        font-size: 20px;
+    }
+    .resubmit .int{
+        width:70%;
+    }
+    .footer{
+        /* margin-left:50px; */
+        background-color: rgba(0, 0, 0, .6);
+        color:rgba(255, 255, 255, 0.7);
+    
+    }
+    .footer h1 {
+        font-size: 18px;
+        margin-bottom: 28px;
+    }
+    
+    .footer .row{
+        display: flex;
+        /* padding:5px 4px; */
+        margin-right:50px;
+    }
+    .footer .col {
+        margin-bottom: 5px;
+        margin-right:25px;
+    }
+    .footer .col a{
+        display: flex;
+        gap:20px;
+        font-size:14px;
+        color:rgba(255, 255, 255, 0.7);
+        margin-bottom:10px;
+    }
+    .footer p {
+        color:rgba(255, 255, 255, 0.7);
+        /* padding:50px 5px; */
+    }
+    .btn-lan {
+        margin-top: 10px;
+        border-radius: 6px;
+        border: 1px solid #777;
+        padding: 6px 20px;
+        background-color: rgb(16, 16, 16);
+        color:rgba(255, 255, 255, 0.7);
+        font-size: 16px;
+    }
+}

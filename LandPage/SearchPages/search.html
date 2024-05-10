@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieApp</title>
+    <link rel="icon"  href="/LandPage/assets/favicon-32x32.png" type="image/png"/>
+    <link rel="stylesheet" href="/LandPage/SearchPages/search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+   <div class="header">
+    <form id="form">
+        <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i><input type="text" id="search" placeholder="search movie" class="search" onclick="getMovies()">
+    </form>
+   </div>
+
+   <img src="./assets/logo - Copy.png" alt="logo" class="logo1">
+   <div class="responsive">
+   <a href="/LandPage/index.html"><img src="./assets/logo - Copy.png" alt="logo" class="logo"></a>
+    <div class="item"><i class="fa-solid fa-magnifying-glass"  id="searchIcon1"></i>
+        <input type="text" id="search1" placeholder="search movie" class="search1" onclick="getMovies()">
+   </div>
+   </div>
+   <div class="sidebar">
+    <div class="sidebar-item" data-name="Search"><button onclick="searchPage()"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></button></div>
+    <div class="sidebar-item" data-name="Home"><button onclick="homePage()"><i class="fa-solid fa-house"></i><span>Home</span></button></div>
+    <div class="sidebar-item" data-name="Trend"><i class="fa-solid fa-arrow-trend-up"></i><span>Trend</span></div>
+    <div class="sidebar-item" data-name="TV"><i class="fa-solid fa-tv"></i><span>TV</span></div>
+    <div class="sidebar-item" data-name="Categories"><i class="fa-solid fa-clapperboard"></i><span>Categories</span></div>
+    <div class="sidebar-item" data-name="Plus"><i class="fa-solid fa-plus"></i><span>Plus</span></div>
+</div>
+
+ <!--KEYBOARD TO TAKE INPUT FROM THE USE (OPTIONAL)-->
+    <!-- <div class="board">
+        <div class="rows">
+            <div class="btnr" id="space"><i class="fa-solid fa-minus"></i></div>
+            <div class="btnr" id="x"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="rows">
+            <div class="btnr">a</div>
+            <div class="btnr">b</div>
+            <div class="btnr">c</div>
+            <div class="btnr">d</div>
+            <div class="btnr">e</div>
+            <div class="btnr">f</div>
+        </div>
+        <div class="rows">
+            <div class="btnr">g</div>
+            <div class="btnr">h</div>
+            <div class="btnr">i</div>
+            <div class="btnr">j</div>
+            <div class="btnr">k</div>
+            <div class="btnr">l</div>
+        </div>
+        <div class="rows">
+            <div class="btnr">m</div>
+            <div class="btnr">n</div>
+            <div class="btnr">o</div>
+            <div class="btnr">p</div>
+            <div class="btnr">q</div>
+            <div class="btnr">r</div>
+        </div>
+        <div class="rows">
+            <div class="btnr">s</div>
+            <div class="btnr">t</div>
+            <div class="btnr">u</div>
+            <div class="btnr">v</div>
+            <div class="btnr">w</div>
+            <div class="btnr">x</div>
+        </div>
+        <div class="rows">
+            <div class="btnr">y</div>
+            <div class="btnr">z</div>
+            <div class="btnr">1</div>
+            <div class="btnr">2</div>
+            <div class="btnr">3</div>
+            <div class="btnr">4</div>
+        </div>
+        <div class="rows">
+            <div class="btnr">5</div>
+            <div class="btnr">6</div>
+            <div class="btnr">7</div>
+            <div class="btnr">8</div>
+            <div class="btnr">9</div>
+            <div class="btnr">0</div>
+        </div>
+    </div>  -->
+
+
+    <div class="container">
+        <div class="slider">
+            <!-- <h2 class="slider_title"></h2> -->
+            <div class="image_list">
+                <!-- <img src="#" class="image_item"/> -->
+            </div>
+        </div>
+    </div>
+
+       
+</body>
+<script src="search.js"></script>
+</html>
